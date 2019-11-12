@@ -1,0 +1,147 @@
+:root {
+  --color-primary: #3764f8;
+  --color-secondary: #b91b1b;
+  --color-grey-dark: #4b4b4b;
+  --color-grey-light: #f8f8f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: digital;
+  src: url(../fonts/digital.ttf);
+}
+
+.header {
+  position: relative;
+  background: var(--color-primary);
+  color: #ffffff;
+  height: 70px;
+}
+
+.title {
+  position: absolute;
+  font-size: 40px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leaderboard {
+  font-family: digital;
+  font-size: 35px;
+  position: relative;
+  transform: translate(-50%);
+  left: 50%;
+  margin-top: 30px;
+  padding: 10px 60px;
+  width: max-content;
+  border: 3px solid var(--color-primary);
+}
+
+.user-score,
+.computer-score {
+  font-family: digital;
+  font-size: 35px;
+  color: var(--color-grey-dark);
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  background: var(--color-secondary);
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.user-badge {
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+.computer-badge {
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.sub-title {
+  color: var(--color-grey-dark);
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+}
+
+.choice img {
+  width: 80px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #000000d2;
+  z-index: 10;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-text {
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  top: 0;
+}
+
+.welcome-image {
+  height: 500px;
+  width: auto;
+  box-shadow: 3px 3px 43px -6px rgba(0, 0, 0, 0.55);
+}
+
+.modal-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 3px 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-button:hover {
+  color: #3764f8;
+  border: 1px solid #3764f8;
+}
+
+.hide {
+  visibility: hidden;
+}
